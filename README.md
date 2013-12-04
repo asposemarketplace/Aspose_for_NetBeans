@@ -17,3 +17,4 @@ This plugin helps you to explore Aspose Java components inside your favorite IDE
 ###Important Links
 - [Aspose Project Wizard at NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/47954/aspose-project-wizard)
 - [Download and use Aspose Java APIs and Examples on NetBeans through Aspose Project Wizard](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family/archive/2013/08/01/download-and-use-aspose-java-apis-and-examples-on-netbeans-through-aspose-project-wizard.html)
+- [Aspose Java Components](http://www.aspose.com/java/total-component.aspx)
