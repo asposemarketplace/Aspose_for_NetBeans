@@ -22,7 +22,7 @@ This plugin helps you to explore Aspose Java components inside your favorite IDE
 ###How to use Aspose Project Wizard
 - Follow the simple [steps for plugin installation and its usage.](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family/archive/2013/08/01/download-and-use-aspose-java-apis-and-examples-on-netbeans-through-aspose-project-wizard.html)
 
-###How to configure Aspose Project Wizard source code
+###How to configure source code of Aspose Project Wizard
 Below simple steps will smoothly lead to successful configuration of Aspose Project Wizard source code in NetBeans IDE
 
 1. Download / Clone the source code.
