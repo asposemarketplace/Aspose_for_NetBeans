@@ -20,7 +20,7 @@ This plugin helps you to explore Aspose Java components inside your favorite IDE
 - With this plugin, you never need to check for new releases of Aspose components. Whenever a new release is published, you will be notified while creating project and you can also check release notes to save your time.
 
 ###How to use Aspose Project Wizard
-- [Steps for plugin installation and usage.](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family/archive/2013/08/01/download-and-use-aspose-java-apis-and-examples-on-netbeans-through-aspose-project-wizard.html)
+- Follow the simple [steps for plugin installation and its usage.](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family/archive/2013/08/01/download-and-use-aspose-java-apis-and-examples-on-netbeans-through-aspose-project-wizard.html)
 
 ###How to configure Aspose Project Wizard source code
 Below simple steps will smoothly lead to successful configuration of Aspose Project Wizard source code in NetBeans IDE
