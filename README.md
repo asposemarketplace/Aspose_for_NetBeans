@@ -18,3 +18,14 @@ This plugin helps you to explore Aspose Java components inside your favorite IDE
 - Selected sample will be added to current project including source files and required data files.
 - New created project is ready to debug/evaluate, all references are automatically added.
 - With this plugin, you never need to check for new releases of Aspose components. Whenever a new release is published, you will be notified while creating project and you can also check release notes to save your time.
+
+###How to use Aspose Project Wizard
+- [Steps for plugin installation and usage.](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family/archive/2013/08/01/download-and-use-aspose-java-apis-and-examples-on-netbeans-through-aspose-project-wizard.html)
+
+###How to configure Aspose Project Wizard source code
+Below simple steps will smoothly lead to successful configuration of Aspose Project Wizard source code in NetBeans IDE
+
+1. Download / Clone the source code.
+2. Choose File -> Open Project
+3. Browse to the project source that is just downloaded in above step and open the project.
+4. Aspose for NetBeans plugin code is now ready to enhance.
