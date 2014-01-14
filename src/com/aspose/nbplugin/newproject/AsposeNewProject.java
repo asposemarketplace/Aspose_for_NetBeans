@@ -654,7 +654,7 @@ public class AsposeNewProject extends javax.swing.JDialog {
     }
 
     private void setProjectName(String projectPath) throws FileNotFoundException {
-        String myfile = projectPath + File.separator + "nbproject\\project.xml";
+        String myfile = projectPath + File.separator + "nbproject"+ File.separator +"project.xml";
         try {
             replace("AsposeComponents", jTextFieldProjectName.getText(), myfile);
         } catch (IOException ex) {
@@ -780,7 +780,7 @@ public class AsposeNewProject extends javax.swing.JDialog {
         extractTemplate(projectPath, projectName);
         setProjectName(projectPath + File.separator + projectName);
         copyLibraryFiles(projectPath + File.separator + projectName);
-        addLibraryFileToProject(projectPath + File.separator + projectName + File.separator + "nbproject\\project.properties");
+        addLibraryFileToProject(projectPath + File.separator + projectName + File.separator + "nbproject"+File.separator+"project.properties");
         // File egdir = FileUtil.normalizeFile("C:\\Users\\Administrator\\Documents\\TemplatePrj\\AsposeComponents");
         File egdir = new File(projectPath + File.separator + projectName);
         FileObject obj = FileUtil.toFileObject(egdir);
