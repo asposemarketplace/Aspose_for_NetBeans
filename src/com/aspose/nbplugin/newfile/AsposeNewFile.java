@@ -449,7 +449,7 @@ public class AsposeNewFile extends javax.swing.JDialog {
             examplesTree.removeAll();
             CustomtMutableTreeNode top = new CustomtMutableTreeNode(componentName);
             top.setExPath("src");
-            List<Folders> rootFoldersList = (List<Folders>) data.getFolders();
+            List<Folders> rootFoldersList = data.getFolders();
             parseFoldersTree(rootFoldersList, top);
             parseExamples(data.getExamples(), top);
             DefaultTreeModel model = (DefaultTreeModel) examplesTree.getModel();
@@ -488,7 +488,7 @@ public class AsposeNewFile extends javax.swing.JDialog {
     void parseExamples(List<Examples> examplesList, CustomtMutableTreeNode parentItem) {
         //
         for (Examples examples : examplesList) {
-            List<Example> exampleList = ((Examples) examples).getExample();
+            List<Example> exampleList = examples.getExample();
             for (Example example : exampleList) {
                 // false: do not run
                 parseExample(example, parentItem);

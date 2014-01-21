@@ -79,13 +79,17 @@ public class AsposeComponentsManager {
                 component.set_downloadFileName(productRelease.getFileName());
                 component.set_changeLog(productRelease.getChangeLog());
                 component.set_latestVersion(productRelease.getVersionNumber());
-                if (libraryAlreadyExists(component.get_downloadFileName())) {
+                
+                if (libraryAlreadyExists(component.get_downloadFileName())) 
+                {
                     component.set_currentVersion(readVersion(component));
-                    if (readVersion(component).equals(component.get_latestVersion())) {
-
+                    if (readVersion(component).equals(component.get_latestVersion())) 
+                    {
                         component.set_downloaded(true);
                         //storeVersion(component);
-                    } else {
+                    } 
+                    else 
+                    {
                         storeReleaseNotes(component);
                         String htmlFilePath = getLibaryDownloadPath() + component.get_name() + ".htm"; // path to your new file
                         File htmlFile = new File(htmlFilePath);
@@ -346,7 +350,7 @@ public class AsposeComponentsManager {
     public static String getLibaryDownloadPath() {
         String path = "";
         path = System.getProperty("user.home");
-        path = path + "/aspose/ecplugin/";
+        path = path + File.separator +"aspose"+File.separator+"nbplugin"+File.separator;
         File confirmPath = new File(path);
         if (!confirmPath.exists()) {
             new File(path).mkdirs();

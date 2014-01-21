@@ -29,7 +29,6 @@ public final class asposenewfile implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
          AsposeNewFile file = new AsposeNewFile(null, true);
-        file.show();
-
+        file.setVisible(true);
     }
 }

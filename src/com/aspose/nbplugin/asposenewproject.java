@@ -30,8 +30,6 @@ public final class asposenewproject implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // TODO implement action body
         AsposeNewProject proj = new AsposeNewProject(null, true);
-        proj.show();
-        
-        
+        proj.setVisible(true);
     }
 }
