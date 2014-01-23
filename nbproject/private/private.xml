@@ -3,16 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/nbproject/private/platform-private.properties</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/nbproject/platform.properties</file>
             <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/nbproject/project.properties</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/nbproject/project.xml</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/asposenewfile.java</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/asposenewproject.java</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/examplesmodel/Data.java</file>
             <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/newfile/AsposeNewFile.java</file>
-            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/utils/AsposeComponentsManager.java</file>
             <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/manifest.mf</file>
+            <file>file:/D:/Banckle/workspaces/NetBeans7.4/AsposeNetBeansPlugin7.4/src/com/aspose/nbplugin/newproject/AsposeNewProject.java</file>
         </group>
     </open-files>
 </project-private>
