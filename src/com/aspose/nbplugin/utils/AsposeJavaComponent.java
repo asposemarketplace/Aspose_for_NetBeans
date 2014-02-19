@@ -4,10 +4,6 @@
  */
 package com.aspose.nbplugin.utils;
 
-/**
- *
- * @author Administrator
- */
 public class AsposeJavaComponent {
   private String _name;
 	private boolean _selected;

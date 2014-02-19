@@ -7,8 +7,6 @@ package com.aspose.nbplugin.utils;
  * Copyright (c) 2001-2013 Aspose Pty Ltd. All Rights Reserved.
  * Author: Mohsan.Raza
  */
-//package com.aspose.nbplugin;
-//import com.aspose.ProductRelease;
 import com.aspose.componentsdownload.ObjectFactoryComponents;
 import com.aspose.componentsdownload.ProductRelease;
 import java.awt.Desktop;
@@ -30,7 +28,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownHostException;
-import com.aspose.nbplugin.newproject.AsposeNewProject;
+import com.aspose.nbplugin.AsposeWizardPanelComponent;
 import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
 import java.util.Enumeration;
@@ -51,9 +49,9 @@ import javax.xml.transform.stream.StreamSource;
  */
 public class AsposeComponentsManager {
 
-    AsposeNewProject _pageOne = null;
+    AsposeWizardPanelComponent _pageOne = null;
 
-    public AsposeComponentsManager(AsposeNewProject page) {
+    public AsposeComponentsManager(AsposeWizardPanelComponent page) {
         _pageOne = page;
     }
 
@@ -386,7 +384,7 @@ public class AsposeComponentsManager {
 
                 String fileName = ze.getName();
                 File newFile = new File(outputFolder + File.separator + fileName);
-                System.out.println("file unzip : " + newFile.getAbsoluteFile());
+                AsposeConstants.println("file unzip : " + newFile.getAbsoluteFile());
                 new File(newFile.getParent()).mkdirs();
                 FileOutputStream fos = new FileOutputStream(newFile);
                 int len;
@@ -401,7 +399,7 @@ public class AsposeComponentsManager {
             zis.closeEntry();
             zis.close();
 
-            System.out.println("Done");
+            AsposeConstants.println("Done");
 
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -416,7 +414,7 @@ public class AsposeComponentsManager {
      * @throws IOException
      */
     static public void extractFolder(String zipFile, String newPath) throws ZipException, IOException {
-        System.out.println(zipFile);
+        AsposeConstants.println(zipFile);
         int BUFFER = 2048;
         File file = new File(zipFile);
 

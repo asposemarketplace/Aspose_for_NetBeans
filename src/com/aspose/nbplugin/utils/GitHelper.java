@@ -22,7 +22,7 @@ public class GitHelper {
 			localRepo = new FileRepository(localPath + "/.git");
 
 			Git git = new Git(localRepo);
-			{System.out.println("Cloning Repository [" + remotePath + "]....");}
+			{AsposeConstants.println("Cloning Repository [" + remotePath + "]....");}
 
 			// First try to clone the repository
 			try
@@ -39,7 +39,7 @@ public class GitHelper {
 				catch(Exception exPull)
 				{
 					// Pull also failed. Throw this exception to caller
-					{System.out.println("Pull also failed.");}
+					{AsposeConstants.println("Pull also failed.");}
 					throw exPull; // throw it
 				}
 			}
