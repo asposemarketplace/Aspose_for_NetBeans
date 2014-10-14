@@ -21,6 +21,8 @@ public class AsposeConstants
     public static final String ASPOSE_EMAIL = "Aspose.Email";
     public static final String ASPOSE_OCR = "Aspose.OCR";
     public static final String ASPOSE_IMAGING = "Aspose.Imaging";
+    public static final String ASPOSE_TASKS = "Aspose.Tasks";
+    public static final String ASPOSE_DIAGRAM = "Aspose.Diagram";
 
     public static final String WEBSERVICE_ENDPOINT = "http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx";
 
@@ -152,6 +154,25 @@ public class AsposeConstants
         + "<br/>spectrum of traditional image processing "
         + "<br/>operations as well as most demanded features "
         + "<br/>that makes it most widely used imaging engine.</html>";
+    
+    public static final String ASPOSE_TASKS_FEATURE_TEXT
+        = "<html>Aspose.Tasks for Java is a project management" +
+            "<br/>API that enables Java application developers" +
+            "<br/>to provide Microsoft Project® document" +
+            "<br/>manipulation capability in their applications –" +
+            "<br/>all without using Microsoft Project®." +
+            "<br/>With this powerful API, developers can" +
+            "<br/>control various stages of project management," +
+            "<br/>such as project planning, definition and tracking.</html>";
+
+    public static final String ASPOSE_DIAGRAM_FEATURE_TEXT
+        = "<html>Aspose.Diagram for Java is a Non-Graphical" +
+            "<br/>and well-structured API that allows developers" +
+            "<br/>to load, create, save and manipulate Microsoft Visio" +
+            "<br/>drawings within a Java application without using" +
+            "<br/>Microsoft Visio. It provides better performance" +
+            "<br/>and is easier to use to manipulate diagrams and" +
+            "<br/>convert files than Microsoft Office Automation.</html>";
 
     private static final boolean printing_allowed = false; 
     

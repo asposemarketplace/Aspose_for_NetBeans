@@ -70,9 +70,12 @@ public class AsposeComponentsManager {
             if (component.is_selected()) {
 
                 ProductRelease productRelease = getProductReleaseInfo(component.get_downloadUrl());
+                
                 if (productRelease == null) {
                     continue;
                 }
+                System.out.println("File Name: " + productRelease.getFileName());
+                System.out.println("Download Link: " + productRelease.getDownloadLink());
                 component.set_downloadUrl(productRelease.getDownloadLink());
                 component.set_downloadFileName(productRelease.getFileName());
                 component.set_changeLog(productRelease.getChangeLog());

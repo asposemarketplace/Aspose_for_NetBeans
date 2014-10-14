@@ -154,6 +154,8 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_EMAIL, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeEmail().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_OCR, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeOCR().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_IMAGING, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeImaging().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_TASKS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeTasks().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_DIAGRAM, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeDiagram().isSelected());
     }
 
     //=========================================================================
@@ -222,6 +224,14 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
         if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeImaging().isSelected())
         {
             AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_IMAGING).set_selected(true);
+        }
+        if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeTasks().isSelected())
+        {
+            AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_TASKS).set_selected(true);
+        }
+        if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeDiagram().isSelected())
+        {
+            AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_DIAGRAM).set_selected(true);
         }
 
     }

@@ -96,6 +96,22 @@ public class AsposeJavaComponents {
             asposeImaging.set_remoteExamplesRepository("https://github.com/asposeimaging/Aspose_Imaging_Java.git");
             list.put(AsposeConstants.ASPOSE_IMAGING, asposeImaging);
 
+            //ASPOSE_TASKS
+            AsposeJavaComponent asposeTasks = new AsposeJavaComponent();
+            asposeTasks.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.tasks.aspx");
+            asposeTasks.set_downloadFileName("aspose.tasks.zip");
+            asposeTasks.set_name(AsposeConstants.ASPOSE_TASKS);
+            asposeTasks.set_remoteExamplesRepository("https://github.com/asposetasks/Aspose_Tasks_Java.git");
+            list.put(AsposeConstants.ASPOSE_TASKS, asposeTasks);
+
+            //ASPOSE_DIAGRAM
+            AsposeJavaComponent asposeDiagram = new AsposeJavaComponent();
+            asposeDiagram.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.diagram.aspx");
+            asposeDiagram.set_downloadFileName("aspose.diagram.zip");
+            asposeDiagram.set_name(AsposeConstants.ASPOSE_DIAGRAM);
+            asposeDiagram.set_remoteExamplesRepository("https://github.com/asposediagram/Aspose_Diagram_Java.git");
+            list.put(AsposeConstants.ASPOSE_DIAGRAM, asposeDiagram);
+
             //compInitialized = true;
         }
     }
