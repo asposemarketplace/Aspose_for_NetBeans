@@ -4,7 +4,9 @@
  */
 package com.aspose.nbplugin.utils;
 
+import com.aspose.nbplugin.newfile.otherexamples.ExamplesFrameWork;
 import com.aspose.nbplugin.newfile.otherexamples.OtherExamplesManager;
+import com.aspose.nbplugin.newfile.otherexamples.OtherExamples;
 import java.io.File;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
@@ -85,8 +87,22 @@ public class GitHelper {
      * @return
      */
     public static boolean isExamplesDefinitionsPresent(AsposeJavaComponent component) {
+        Boolean isExamplesDefinitionsPresent = true;
         File file = new File(getLocalRepositoryPath(component) + File.separator + "Examples.xml");
-        return file.exists();
+        isExamplesDefinitionsPresent = file.exists();
+
+        if (isExamplesDefinitionsPresent) {
+            if (!component.getOtherFrameworkExamples().isEmpty()) {
+                for (OtherExamples _otherExample : component.getOtherFrameworkExamples()) {
+                    File otherExamplesDefinitionFile = new File(OtherExamplesManager.getOtherExamplesDefinitionsPath(_otherExample, component));
+                    if (!otherExamplesDefinitionFile.exists()) {
+                        isExamplesDefinitionsPresent = false;
+                        break;
+                    }
+                }
+            }
+        }
+        return isExamplesDefinitionsPresent;
     }
 
     /**
