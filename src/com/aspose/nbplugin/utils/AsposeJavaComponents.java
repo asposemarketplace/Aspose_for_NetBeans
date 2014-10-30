@@ -4,6 +4,7 @@
  */
 package com.aspose.nbplugin.utils;
 
+import com.aspose.nbplugin.newfile.otherexamples.OtherExamplesManager;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,6 +26,11 @@ public class AsposeJavaComponents {
             asposeCells.set_downloadFileName("aspose-cells.zip");
             asposeCells.set_name(AsposeConstants.ASPOSE_CELLS);
             asposeCells.set_remoteExamplesRepository("https://github.com/asposecells/Aspose_Cells_Java.git");
+
+            // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
+            asposeCells.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeCells));
+            // adeel.ilyas@aspose.com
+
             list.put(AsposeConstants.ASPOSE_CELLS, asposeCells);
 
             //ASPOSE_WORDS
@@ -33,6 +39,11 @@ public class AsposeJavaComponents {
             asposeWords.set_downloadFileName("aspose-words.zip");
             asposeWords.set_name(AsposeConstants.ASPOSE_WORDS);
             asposeWords.set_remoteExamplesRepository("https://github.com/asposewords/Aspose_Words_Java.git");
+
+            // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
+            asposeWords.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeWords));
+            // adeel.ilyas@aspose.com
+            
             list.put(AsposeConstants.ASPOSE_WORDS, asposeWords);
 
             //ASPOSE_PDF
@@ -49,6 +60,11 @@ public class AsposeJavaComponents {
             asposeSlides.get_downloadFileName();
             asposeSlides.set_name(AsposeConstants.ASPOSE_SLIDES);
             asposeSlides.set_remoteExamplesRepository("https://github.com/asposeslides/Aspose_Slides_Java.git");
+            
+            // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
+            asposeSlides.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeSlides));
+            // adeel.ilyas@aspose.com
+            
             list.put(AsposeConstants.ASPOSE_SLIDES, asposeSlides);
 
             //ASPOSE_PDF KIT
@@ -79,6 +95,11 @@ public class AsposeJavaComponents {
             asposeEmail.get_downloadFileName();
             asposeEmail.set_name(AsposeConstants.ASPOSE_EMAIL);
             asposeEmail.set_remoteExamplesRepository("https://github.com/asposeemail/Aspose_Email_Java.git");
+            
+            // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
+            asposeEmail.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeEmail));
+            // adeel.ilyas@aspose.com
+            
             list.put(AsposeConstants.ASPOSE_EMAIL, asposeEmail);
 
             //ASPOSE_OCR
