@@ -145,17 +145,24 @@ public class AsposeNewFileWizardPanel1 implements WizardDescriptor.Panel<WizardD
             // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples 
             String sourceRepositoryPath = GitHelper.getLocalRepositoryPath(asposeComponent) + File.separator + path;
             String destinationPath = projectPath + File.separator + path;
-
+            
             if (!asposeComponent.getOtherFrameworkExamples().isEmpty()) {
                 for (OtherExamples _otherExample : asposeComponent.getOtherFrameworkExamples()) {
                     String examplesName = _otherExample.getExampleName();
-                    if (destinationPath.contains(examplesName)) {
-                        destinationPath = destinationPath.replace(examplesName + "\\", "");
+                    if (destinationPath.contains(examplesName)) 
+                    {
+                        //updated by shoaib.khan@aspose.com - fixed for Mac
+                        destinationPath = destinationPath.replace(examplesName + File.separator, "");
+                        
                         OtherExamplesManager.installExamplesDependencies(_otherExample, projectPath);
                         break;
                     }
                 }
             }
+            AsposeConstants.println("=============================================");
+            AsposeConstants.println("sourceRepositoryPath: " + sourceRepositoryPath);
+            AsposeConstants.println("destinationPath: " + destinationPath);
+            AsposeConstants.println("=============================================");
 
             copyExample(sourceRepositoryPath, destinationPath);
             // adeel.ilyas@aspose.com

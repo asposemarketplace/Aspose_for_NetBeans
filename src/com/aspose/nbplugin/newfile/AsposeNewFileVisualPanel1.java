@@ -330,6 +330,8 @@ public final class AsposeNewFileVisualPanel1 extends JPanel {
         if (GitHelper.isExamplesDefinitionsPresent(component)) {
             try {
                 p.progress(5);
+                StatusDisplayer.getDefault().setStatusText("Checking for new examples ...");
+                GitHelper.updateRepository(component,p); // added by shoaib.khan@aspose.com to always show the updated examples as soon as these are added on github.
                 StatusDisplayer.getDefault().setStatusText("Populating examples tree ...");
                 populateExamplesTree(component);
                 p.progress(5);
