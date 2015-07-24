@@ -1,3 +1,13 @@
+### :sparkles: Visit New Repository for Latest Updates :sparkles:
+
+* For further releases and updates, please visit and follow our new [Aspose Java for NetBeans](https://github.com/asposetotal/Aspose_Total_Java) github repository.
+* For documentation, please visit [Aspose Docs](http://www.aspose.com/docs).
+* For downloads, never forget to visit [NetBeans Plugin Portal](http://plugins.netbeans.org/plugin/47954/aspose-project-wizard).
+
+[![Download](http://cdn.aspose.com/Images/marketplace/free-download-icon-aspose-mp.png)](http://plugins.netbeans.org/download/plugin/3658)
+
+---
+
 Aspose for NetBeans
 ===
 Aspose for NetBeans allows developers to create an Aspose project through a wizard. The wizard enables the developers to select and download the latest Aspose libraries and samples of their choice.
